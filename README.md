@@ -11,7 +11,7 @@ This repo aims to provide tool and package to manage Golang application's versio
 Install `versioner` tool:
 
 ```console
-go install github.com/patrulek/versioner
+go install github.com/patrulek/versioner@v0.0.1
 ```
 
 In your application's main package insert such line:
@@ -23,7 +23,7 @@ In your application's main package insert such line:
 And in a place where you need to use a version info:
 
 ```go
-import github.com/patrulek/versioner/version
+import "github.com/patrulek/versioner/version"
 
 func yourFunc() {
     // use version string
@@ -43,3 +43,14 @@ Another cool thing is that it uses `go-git` package to get repository informatio
 ## Changelog
 
 - **v0.0.1 - 01.05.2023**: Proof of Concept
+
+```console
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Go                               2             50              1            185
+Markdown                         1             18              0             38
+-------------------------------------------------------------------------------
+TOTAL                            3             68              1            223
+-------------------------------------------------------------------------------
+```
